@@ -35,3 +35,5 @@ Thumbs.db
 # Selenium
 geckodriver.log
 chromedriver.log
+test_output.txt
+*.log

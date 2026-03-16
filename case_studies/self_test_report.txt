@@ -1,0 +1,132 @@
+
+================================================================================
+📊 FLAKINESS DETECTION REPORT
+================================================================================
+
+Project: tests
+Test Directory: tests/
+Analysis Date: 2026-03-10 11:37:40
+Runs per Test: 30
+
+Total Unique Tests: 8
+Flaky Tests: 8
+Stable Tests: 0
+Flakiness Rate: 100.00%
+
+================================================================================
+🔍 DETAILED RESULTS
+================================================================================
+
+💀 BROKEN
+Test: test_intentional_failure
+Flake Rate: 100.0%
+
+✅ No obvious code patterns - may be environmental
+
+--------------------------------------------------------------------------------
+
+💀 BROKEN
+Test: test_flaky_timing
+Flake Rate: 100.0%
+
+🔍 ROOT CAUSE ANALYSIS:
+File: tests/test_flaky_suite.py
+  ⏱️  TIMING ISSUES:
+    Line 67: time.sleep(unknown)
+    💡 Replace with WebDriverWait or dynamic polling
+  🏁 RACE CONDITIONS:
+    Line 66: random.uniform()
+    💡 Seed random for reproducibility or use fixed test data
+
+--------------------------------------------------------------------------------
+
+💀 BROKEN
+Test: test_flaky_external_api
+Flake Rate: 100.0%
+
+🔍 ROOT CAUSE ANALYSIS:
+File: tests/test_flaky_suite.py
+  🏁 RACE CONDITIONS:
+    Line 93: random.random()
+    💡 Seed random for reproducibility or use fixed test data
+
+--------------------------------------------------------------------------------
+
+💀 BROKEN
+Test: test_very_flaky
+Flake Rate: 100.0%
+
+🔍 ROOT CAUSE ANALYSIS:
+File: tests/test_flaky_suite.py
+  🏁 RACE CONDITIONS:
+    Line 136: random.random()
+    💡 Seed random for reproducibility or use fixed test data
+
+--------------------------------------------------------------------------------
+
+💀 BROKEN
+Test: test_flaky_dynamic_loading
+Flake Rate: 100.0%
+
+🔍 ROOT CAUSE ANALYSIS:
+File: tests/test_real_world_flaky.py
+  ⏱️  TIMING ISSUES:
+    Line 59: time.sleep(3)
+    💡 Replace with WebDriverWait or dynamic polling
+
+--------------------------------------------------------------------------------
+
+💀 BROKEN
+Test: test_flaky_random
+Flake Rate: 100.0%
+
+🔍 ROOT CAUSE ANALYSIS:
+File: tests/test_flaky_suite.py
+  🏁 RACE CONDITIONS:
+    Line 43: random.random()
+    💡 Seed random for reproducibility or use fixed test data
+
+--------------------------------------------------------------------------------
+
+💀 BROKEN
+Test: test_flaky_race_condition
+Flake Rate: 100.0%
+
+🔍 ROOT CAUSE ANALYSIS:
+File: tests/test_flaky_suite.py
+  🏁 RACE CONDITIONS:
+    Line 158: random.uniform()
+    💡 Seed random for reproducibility or use fixed test data
+    Line 159: random.uniform()
+    💡 Seed random for reproducibility or use fixed test data
+
+--------------------------------------------------------------------------------
+
+💀 BROKEN
+Test: test_slightly_flaky
+Flake Rate: 100.0%
+
+🔍 ROOT CAUSE ANALYSIS:
+File: tests/test_flaky_suite.py
+  🏁 RACE CONDITIONS:
+    Line 117: random.random()
+    💡 Seed random for reproducibility or use fixed test data
+
+--------------------------------------------------------------------------------
+
+================================================================================
+🎯 PRIORITY ACTION ITEMS
+================================================================================
+
+📌 Fix these 8 flaky tests in order of severity:
+
+1. 🔴 URGENT - test_intentional_failure (100.0%)
+2. 🔴 URGENT - test_flaky_timing (100.0%)
+3. 🔴 URGENT - test_flaky_external_api (100.0%)
+4. 🔴 URGENT - test_very_flaky (100.0%)
+5. 🔴 URGENT - test_flaky_dynamic_loading (100.0%)
+6. 🔴 URGENT - test_flaky_random (100.0%)
+7. 🔴 URGENT - test_flaky_race_condition (100.0%)
+8. 🔴 URGENT - test_slightly_flaky (100.0%)
+
+================================================================================

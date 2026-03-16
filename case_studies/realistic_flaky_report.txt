@@ -1,0 +1,35 @@
+REALISTIC FLAKY TEST ANALYSIS
+================================================================================
+
+🔴 SEVERELY FLAKY
+Test: test_pagination_flaky
+Flake Rate: 95.83%
+
+🔴 SEVERELY FLAKY
+Test: test_cache_state_flaky
+Flake Rate: 63.01%
+
+🟠 HIGHLY FLAKY
+Test: test_login_timeout_flaky
+Flake Rate: 55.07%
+
+🟠 HIGHLY FLAKY
+Test: test_file_write_race
+Flake Rate: 50.75%
+
+🟡 MODERATELY FLAKY
+Test: test_network_flaky
+Flake Rate: 38.71%
+
+✅ STABLE
+Test: test_selenium_element_timing
+Flake Rate: 0.0%
+
+✅ STABLE
+Test: test_stable_math_operations
+Flake Rate: 0.0%
+
+✅ STABLE
+Test: test_stable_string_concatenation
+Flake Rate: 0.0%
+

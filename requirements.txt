@@ -1,0 +1,6 @@
+pytest==8.0.0
+selenium==4.16.0
+webdriver-manager==4.0.1
+streamlit==1.31.0
+plotly==5.18.0
+pandas==2.1.4

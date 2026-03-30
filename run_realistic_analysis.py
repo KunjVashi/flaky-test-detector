@@ -94,4 +94,4 @@ with open('case_studies/realistic_flaky_report.txt', 'w') as f:
         f.write(f"Test: {test['test_name']}\n")
         f.write(f"Flake Rate: {test['flake_rate']}%\n\n")
 
-print("\n💾 Report saved to: case_studies/realistic_flaky_report.txt")
+print("\n💾 Report saved to: case_studies/realistic_flaky_report.txt") 
